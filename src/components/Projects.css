@@ -1,0 +1,65 @@
+.projectBox {
+  background-size: cover;
+  width: 100%;
+  background:  no-repeat center;
+  margin: 0;
+  position: relative;
+  display: inline-block;
+  border-radius: 10%;
+}
+
+.projectName {
+  color: white;
+  border: white 3px solid ;
+  text-align: center; 
+  display: inline-block;
+  padding: 5px 20px;
+  background: rgba(255,255,255,0.4);
+  font-size: 20pt;
+  font-family: "Garamond", sans-serif;
+  position: relative;
+  top: 35%;
+ }
+
+.projectsBox {
+  transition: ease-in-out 0.8s;
+  position: relative;
+  margin: 0;
+  width: 80;
+   
+}
+
+.projectBox {
+  transition: ease-in-out 0.3s;
+  background-size: contain;
+  background-color: darkslategray;
+}
+
+.projectBox:hover {
+  transform: scale(1.15);
+  opacity: 1 !important;
+}
+
+.projectsBox {
+  pointer-events: none;
+}
+
+.projectsBox .projectBox {
+  pointer-events: auto;
+}
+
+.projectsBox:hover .projectBox {
+  opacity: 0.5;
+}
+
+.projectsBox:hover .projectBox:hover {
+  opacity: 1;
+}
+ 
+
+.description{ 
+  margin-top: 25px;
+  margin-bottom: 50px ;
+
+
+}
