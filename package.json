@@ -5,12 +5,13 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "firebase": "^5.5.9",
+    "gh-pages": "^2.1.1",
     "react": "^16.7.0",
-    "react-router-dom": "^4.3.1",
     "react-bootstrap": "^1.0.0-beta.16",
+    "react-dimensions": "^1.0.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.1",
-    "react-dimensions": "^1.0.0"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,12 +33,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karensin/Bloc-Chat-React.git"
+    "url": "git+https://github.com/karensin/karensin.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/karensin/Bloc-Chat-React/issues"
+    "url": "https://github.com/karensin/karensin.github.io/issues"
   },
-  "homepage": "https://github.com/karensin/Bloc-Chat-React#readme"
+  "homepage": "https://github.com/karensin/karensin.github.io#readme"
 }
