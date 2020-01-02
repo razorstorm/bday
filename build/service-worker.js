@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/karensin/karensin.github.io/precache-manifest.c87dc5b6806c74139e8567befc8b2547.js"
+  "/karensin/karensin.github.io-/precache-manifest.2153adab33d2b4558b1588df941689ca.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/karensin/karensin.github.io/index.html", {
+workbox.routing.registerNavigationRoute("/karensin/karensin.github.io-/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
