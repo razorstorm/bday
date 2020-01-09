@@ -14,9 +14,9 @@ ReactDOM.render(
     
         <main>
      
-          <Route exact path="/" component={App} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/resume" component={Resume} />
+          <Route  path="/" component={App} />
+          <Route  path="/about" component={About} />
+          <Route  path="/resume" component={Resume} />
          </main>
     </BrowserRouter>
   , document.getElementById('root'))
