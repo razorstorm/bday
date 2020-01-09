@@ -10,7 +10,8 @@ import Resume from './components/Resume.js'
 import About from './components/About.js'
 
 ReactDOM.render(  
-    <BrowserRouter>
+    <BrowserRouter basename ="/portfolio2019">
+    
         <main>
      
           <Route exact path="/" component={App} />
