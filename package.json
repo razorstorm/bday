@@ -2,13 +2,13 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://karensin.github.io/portfolio2019",
   "engines": {
     "npm": "6.13.4",
     "node": "12.14.0"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "gh-pages": "^2.1.1",
     "grpc": "^1.20.2",
     "react": "^16.7.0",
     "react-bootstrap": "^1.0.0-beta.16",
@@ -36,15 +36,16 @@
   ],
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karensin/karensin.github.io.git"
+    "url": "git+https://karensin.github.io/portfolio2019"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://karensin.github.io/karensinn.github.io/"
-  },
-  "homepage": "https://github.com/karensin/karensin.github.io/karensin.github.io"
+    "url": "https://karensin.github.io/portfolio2019"
+  }
 }
