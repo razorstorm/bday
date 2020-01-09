@@ -15,7 +15,7 @@ ReactDOM.render(
         <main>
      
           <Route  path="/" component={App} />
-          <Route  path="/about" component={About} />
+          <Route  path="/portfolio2019/about" component={About} />
           <Route  path="/resume" component={Resume} />
          </main>
     </BrowserRouter>
