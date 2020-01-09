@@ -11,7 +11,11 @@ class About extends Component {
             <div className="row">
                     <nav>
                         <ul> 
-                            <li><a href= "/"> Home </a> </li> 
+                            <li><a href="#contacts">Contact</a></li>
+                            <li><a href="/portfolio2019/about">About Me</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href= "#resume" >Resume</a></li>
+                            <li><a href= "/portfolio2019"> Home </a> </li> 
                         </ul>
                     </nav>
             </div>
