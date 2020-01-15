@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://karensin.github.io/portfolio2019",
+  "homepage": "https://karensin.github.io/portfolio2019",
   "engines": {
     "npm": "6.13.4",
     "node": "12.14.0"
