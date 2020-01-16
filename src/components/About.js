@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import '../App.css';
- 
+import {
+  BrowserRouter as Router,
+  Link,
+  Route
+} from 'react-router-dom';
+
  
 class About extends Component {
   render (){
@@ -11,11 +16,11 @@ class About extends Component {
             <div className="row">
                     <nav>
                         <ul> 
-                            <li><a href="#contacts">Contact</a></li>
+                            <li><a href='#contact'>Contact</a></li>
                             <li><a href="/portfolio2019/about">About Me</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href= "#resume" >Resume</a></li>
-                            <li><a href= "/portfolio2019"> Home </a> </li> 
+                            <li><Link to="">Projects</Link></li>
+                            <li><a href= "/" >Resume</a></li>
+                            <li> <Link to= "/"> Home </Link> </li> 
                         </ul>
                     </nav>
             </div>
@@ -42,7 +47,7 @@ class About extends Component {
                     </p>
                     </section>
               
-    <section className='contacts'> 
+    <section className='contact' id='contact'> 
  
           <a>  kkwsin@gmail.com  </a>
          <a href= 'https://www.linkedin.com/in/karensin94/'>  Linkedin  </a>

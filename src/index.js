@@ -17,6 +17,7 @@ ReactDOM.render(
           <Route  exact path="/" component={App} />
           <Route  path="/about" component={About} />
           <Route  path="/resume" component={Resume} />
+       
          </Switch>
     </BrowserRouter>
   , document.getElementById('root'))
