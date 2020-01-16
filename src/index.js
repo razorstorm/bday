@@ -5,19 +5,19 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Contact from './components/Contact.js';
-import { Route, Link } from 'react-router-dom';
+import { Route, Link, Switch } from 'react-router-dom';
 import Resume from './components/Resume.js'
 import About from './components/About.js'
 
 ReactDOM.render(  
     <BrowserRouter basename ="/portfolio2019">
     
-        <main>
+        <Switch>
      
           <Route  exact path="/" component={App} />
-          <Route exact path="/portfolio2019/about" component={About} />
-          <Route  exact path="/resume" component={Resume} />
-         </main>
+          <Route  path="/about" component={About} />
+          <Route  path="/resume" component={Resume} />
+         </Switch>
     </BrowserRouter>
   , document.getElementById('root'))
 

@@ -4,7 +4,11 @@ import './App.css';
 import Projects from './components/Projects.js';
 import Bubbles from './components/Bubbles.js';
 import Resume from './components/Resume.js'; 
- 
+import {
+  BrowserRouter as Router,
+  Link,
+  Route
+} from 'react-router-dom';
 
 const bubbleMoveSpeed = 2.5;
 const minBubbleTime = 50;
@@ -99,7 +103,7 @@ class App extends Component {
                         <nav>
                             <ul>
                             <li><a href="#contacts">Contact</a></li>
-                            <li><a href="/portfolio2019/about">About Me</a></li>
+                            <li><Link to="/about">About Me</Link></li>
                             <li><a href="#projects">Projects</a></li>
                             <li><a href= "#resume" >Resume</a></li>
                             <li><a href= "/portfolio2019"> Home </a> </li> 
