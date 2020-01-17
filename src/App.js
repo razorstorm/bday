@@ -4,6 +4,7 @@ import './App.css';
 import Projects from './components/Projects.js';
 import Bubbles from './components/Bubbles.js';
 import Resume from './components/Resume.js'; 
+
 import {
   BrowserRouter as Router,
   Link,
@@ -100,6 +101,7 @@ class App extends Component {
         <header className="App-header">
             <div className="container">
                 <div className="row">
+<<<<<<< HEAD
                         <nav className='navbar'>
                             <ul>
                             <li><a href="#contacts">Contact</a></li>
@@ -109,6 +111,17 @@ class App extends Component {
                             <li><a href= "/portfolio2019"> Home </a> </li> 
                             </ul>
                         </nav>
+=======
+                  <nav>
+                      <ul>
+                        <li><a href="#contacts">Contact</a></li>
+                        <li><Link to="about">About Me</Link></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href= "#resume">Resume</a></li>
+                        <li><Link to="/">Home</Link></li>
+                      </ul>
+                  </nav>
+>>>>>>> formatting
                 </div>
 
                 <div className="title">
