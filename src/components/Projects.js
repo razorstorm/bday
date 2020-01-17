@@ -14,7 +14,7 @@ class Projects extends Component {
     render() {
         return (
             <section className='projects' id="projects" style={{
-                // background: `url("${process.env.PUBLIC_URL + '/images/projects_background.jpg'}") no-repeat center / cover`
+                background: `url("${process.env.PUBLIC_URL + '/images/projects_background.jpg'}") no-repeat center / cover`
             }}>
                 <Container fluid={true}>
                     <Row className='projectsBox'>
