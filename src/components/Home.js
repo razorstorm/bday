@@ -6,10 +6,6 @@ import Resume from './Resume.js';
 import Header from './Header.js';
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="home">

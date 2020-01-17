@@ -4,16 +4,14 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Route, Link, Switch } from 'react-router-dom';
-import Resume from './components/Resume.js'
-import About from './components/About.js'
+import { Route, Switch } from 'react-router-dom';
 
 ReactDOM.render(
   <BrowserRouter basename="/portfolio2019">
-  <Switch>
-    <Route path="/" component={App} />
-  </Switch>
-</BrowserRouter>
+    <Switch>
+      <Route path="/" component={App} />
+    </Switch>
+  </BrowserRouter>
   , document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change

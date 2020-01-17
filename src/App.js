@@ -8,7 +8,7 @@ import Bubbles from './components/Bubbles.js';
 import Resume from './components/Resume.js';
 
 import { BrowserRouter } from 'react-router-dom';
-import { Route, Link, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 const bubbleMoveSpeed = 2.5;
 const minBubbleTime = 50;
