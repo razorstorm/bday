@@ -243,7 +243,6 @@ h3 {
 }
 
 .description {
-  text-align: center;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -253,6 +252,10 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+.projectsBox {
+  text-align: center;
 }
 
 .projBGBG {
