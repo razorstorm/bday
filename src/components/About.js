@@ -12,7 +12,7 @@ class About extends Component {
             <h2 className='title'> Hello There... </h2>
           </div>
         </Header>
-        <section className='aboutme'>
+        <section className='aboutmeSection'>
           <h3 className='titleName'>Experience... </h3>
 
           <p className='aboutme'>
