@@ -4,6 +4,7 @@ import '../App.css';
 import Projects from './Projects.js';
 import Resume from './Resume.js';
 import Header from './Header.js';
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Home extends Component {
   render() {
@@ -14,7 +15,7 @@ class Home extends Component {
             <div className="title">
               <h1> KAREN SIN </h1>
               <h4> Developer | Web Designer | Data Analyst </h4>
-              <a href="#contacts" className="btn"> Let's Collab!</a>
+              <Link to="/#contacts" className="btn">Let's Collab!</Link>
             </div>
           </div>
         </Header>
