@@ -217,6 +217,10 @@ h3 {
   padding-bottom: 25px;
 }
 
+.pageTitle {
+  margin-top: 50px;
+}
+
 .titleName {
   text-align: left;
   color: teal;
