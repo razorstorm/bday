@@ -42,7 +42,6 @@ h1 {
 }
 
 .intro-header {
-  background-color: #222;
   padding: 0px;
 }
 
@@ -93,7 +92,6 @@ header {
 }
 
 header {
-  background: url("/images/header.jpeg") no-repeat fixed center / cover;
   background-size: cover;
   text-align: center;
 }

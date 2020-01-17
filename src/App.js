@@ -84,7 +84,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({ lastBubbleStamp: + new Date() }); // this is some js bullshit that lets you convert a date object to a timestamp: https://stackoverflow.com/questions/221294/how-do-you-get-a-timestamp-in-javascript
+    this.setState({ lastBubbleStamp: + new Date() });
+    // this is some js bullshit that lets you convert a date object to a timestamp: https://stackoverflow.com/questions/221294/how-do-you-get-a-timestamp-in-javascript
     this.interval = setInterval(this.updateBubbles.bind(this), 20);
   }
 

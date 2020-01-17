@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import Projects from './Projects.js';
 import Resume from './Resume.js';
-import Nav from './Nav.js';
+import Header from './Header.js';
 
 class Home extends Component {
   constructor(props) {
@@ -13,8 +13,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <header className="home-header intro-header">
-          <Nav />
+        <Header className="home-header">
           <div className="container">
             <div className="title">
               <h1> KAREN SIN </h1>
@@ -22,7 +21,7 @@ class Home extends Component {
               <a href="#contacts" className="btn"> Let's Collab!</a>
             </div>
           </div>
-        </header>
+        </Header>
         <section className='projects' id="projects">
           <Projects />
         </section>

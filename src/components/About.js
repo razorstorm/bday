@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Nav from './Nav.js';
-import Contacts from './Contacts';
+import Header from './Header.js';
 
 
 class About extends Component {
   render() {
     return (
       <div>
-        <header className="about-header intro-header">
-          <Nav />
+        <Header className="about-header">
           <div className="container">
             <h2 className='title'> Hello There... </h2>
           </div>
-        </header>
+        </Header>
         <section className='aboutme'>
           <h3 className='titleName'>Experience... </h3>
 
