@@ -9,6 +9,7 @@ class Header extends Component {
       <header className={this.props.className + " intro-header"} style={{
         background: `url("${process.env.PUBLIC_URL + '/images/header.jpeg'}") no-repeat fixed center / cover`
       }} >
+        <div className="headerShadow"></div>
         <Nav />
         {this.props.children}
       </header >
