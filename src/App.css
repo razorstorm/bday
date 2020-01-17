@@ -195,7 +195,8 @@ footer {
 
 .contacts a {
   text-align: center;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 section a:hover, .btn a:hover {
