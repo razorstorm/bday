@@ -7,7 +7,7 @@ class Square extends Component {
   render() {
     const squareSize = '300px';
     return (
-      <div class="square">
+      <div className="square">
         <a href={this.props.linkSrc} className={this.props.className}
           style={{
             width: squareSize,
