@@ -6,10 +6,12 @@ import '../App.css';
 class Header extends Component {
   render() {
     return (
-      <header className={this.props.className + " intro-header"} style={{
-        background: `url("${process.env.PUBLIC_URL + '/images/header.jpeg'}") no-repeat fixed center / cover`
-      }} >
-        <div className="headerShadow"></div>
+      <header className={this.props.className + " intro-header"}>
+        <div className="headerBG" style={{
+          background: `url("${process.env.PUBLIC_URL + '/images/header.jpeg'}") no-repeat fixed center / cover`
+        }} >
+          <div className="headerShadow"></div>
+        </div>
         <Nav />
         {this.props.children}
       </header >
