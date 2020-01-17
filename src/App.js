@@ -116,10 +116,7 @@ class App extends Component {
           <a href='https://www.linkedin.com/in/karensin94/'>  Linkedin  </a>
           <a href='https://github.com/karensin'>  Github   </a>
           <a href='https://angel.co/karen-kaweng-sin'> Angel.co </a>
-
-
         </section>
-
         <footer> KarenSin 2019</footer>
 
       </div>

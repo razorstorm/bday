@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Nav from './Nav.js';
+import Contacts from './Contacts';
 
 
 class About extends Component {
@@ -10,8 +11,7 @@ class About extends Component {
         <header className="about-header intro-header">
           <div className="container">
             <Nav />
-            <h3 className='title'> Hello There... </h3>
-
+            <h2 className='title'> Hello There... </h2>
           </div>
         </header>
         <section className='aboutme'>
@@ -33,18 +33,8 @@ class About extends Component {
                     </p>
         </section>
 
-        <section className='contact' id='contact'>
-
-          <a>  kkwsin@gmail.com  </a>
-          <a href='https://www.linkedin.com/in/karensin94/'>  Linkedin  </a>
-          <a href='https://github.com/karensin'>  Github   </a>
-          <a href='https://angel.co/karen-kaweng-sin'> Angel.co </a>
-
-
-        </section>
-        <footer> Karensin 2019 </footer>
+        <Contacts />
       </div>
-
     );
   }
 }
