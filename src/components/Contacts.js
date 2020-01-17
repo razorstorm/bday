@@ -6,7 +6,7 @@ class Contacts extends Component {
     render() {
         return (
             <div>
-                <section className='contacts'>
+                <section className='contacts' id="contacts">
                     <h3> Get in touch </h3>
                     <a href="mailto: kkwsin@gmail.com">kkwsin@gmail.com</a>
                     <a href='https://www.linkedin.com/in/karensin94/'>Linkedin</a>
