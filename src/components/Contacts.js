@@ -15,7 +15,7 @@ class Contacts extends Component {
                         <a href='https://angel.co/karen-kaweng-sin'>Angel.co</a>
                     </section>
                 </section>
-                <footer>Karensin 2019</footer>
+                <footer>Karen Sin 2019</footer>
             </div>
         );
     }

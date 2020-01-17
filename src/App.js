@@ -40,7 +40,7 @@ class App extends Component {
     const currTime = + new Date();
     if (currTime > this.state.lastBubbleStamp + getRandomArbitrary(minBubbleTime, maxBubbleTime)) {
       const direction = Math.random() > 0.5 ? -1 : 1;
-      this.state.bubbles.push({ x: e.pageX, y: e.pageY, size: getRandomArbitrary(minBubbleSize, maxBubbleSize), direction: direction, lastTurnTime: currTime, lastGrowTime: currTime });
+      this.state.bubbles.push({ x: e.clientX, y: e.clientY, size: getRandomArbitrary(minBubbleSize, maxBubbleSize), direction: direction, lastTurnTime: currTime, lastGrowTime: currTime });
       this.setState({ lastBubbleStamp: currTime });
     }
   }

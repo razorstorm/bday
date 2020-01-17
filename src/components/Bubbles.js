@@ -9,8 +9,7 @@ class Bubbles extends Component {
       <div className="bubble" style={{
         left: this.props.x,
         top: this.props.y,
-        transform: 'scale(' + this.props.size + ')',
-        position: "absolute"
+        transform: 'scale(' + this.props.size + ')'
       }}>
       </div>
     );
