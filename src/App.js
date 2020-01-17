@@ -3,13 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Projects from './components/Projects.js';
 import Bubbles from './components/Bubbles.js';
-import Resume from './components/Resume.js'; 
-
-import {
-  BrowserRouter as Router,
-  Link,
-  Route
-} from 'react-router-dom';
+import Resume from './components/Resume.js';
+import Nav from './components/Nav.js';
+import Home from './components/Home.js';
 
 const bubbleMoveSpeed = 2.5;
 const minBubbleTime = 50;
@@ -31,7 +27,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      x: 0, 
+      x: 0,
       y: 0,
       bubbles: []
     };
@@ -41,8 +37,8 @@ class App extends Component {
     const currTime = + new Date();
     if (currTime > this.state.lastBubbleStamp + getRandomArbitrary(minBubbleTime, maxBubbleTime)) {
       const direction = Math.random() > 0.5 ? -1 : 1;
-      this.state.bubbles.push({x:e.pageX, y: e.pageY, size: getRandomArbitrary(minBubbleSize, maxBubbleSize), direction: direction, lastTurnTime: currTime, lastGrowTime: currTime});
-      this.setState({lastBubbleStamp: currTime});
+      this.state.bubbles.push({ x: e.pageX, y: e.pageY, size: getRandomArbitrary(minBubbleSize, maxBubbleSize), direction: direction, lastTurnTime: currTime, lastGrowTime: currTime });
+      this.setState({ lastBubbleStamp: currTime });
     }
   }
 
@@ -80,78 +76,56 @@ class App extends Component {
       }).filter(bubble => {
         return bubble !== null
       });
-      this.setState({bubbles: newBubbles});
+      this.setState({ bubbles: newBubbles });
     }
   }
 
   componentDidMount() {
-    this.setState({lastBubbleStamp: + new Date()}); // this is some js bullshit that lets you convert a date object to a timestamp: https://stackoverflow.com/questions/221294/how-do-you-get-a-timestamp-in-javascript
+    this.setState({ lastBubbleStamp: + new Date() }); // this is some js bullshit that lets you convert a date object to a timestamp: https://stackoverflow.com/questions/221294/how-do-you-get-a-timestamp-in-javascript
     this.interval = setInterval(this.updateBubbles.bind(this), 20);
   }
 
   render() {
     const bubbles = this.state.bubbles.map((bubble, i) => {
-      return <Bubbles x={bubble.x} y={bubble.y} size={bubble.size} key={i}/>
+      return <Bubbles x={bubble.x} y={bubble.y} size={bubble.size} key={i} />
     });
     return (
-      <div className="App" onMouseMove={this._onMouseMove.bind(this) }>
-        <div className="bob"> 
-        {bubbles}
+      <div className="App" onMouseMove={this._onMouseMove.bind(this)}>
+        <div className="bob">
+          {bubbles}
         </div>
-        <header className="App-header">
-            <div className="container">
-                <div className="row">
-<<<<<<< HEAD
-                        <nav className='navbar'>
-                            <ul>
-                            <li><a href="#contacts">Contact</a></li>
-                            <li><Link to="/about">About Me</Link></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href= "#resume" >Resume</a></li>
-                            <li><a href= "/portfolio2019"> Home </a> </li> 
-                            </ul>
-                        </nav>
-=======
-                  <nav>
-                      <ul>
-                        <li><a href="#contacts">Contact</a></li>
-                        <li><Link to="about">About Me</Link></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href= "#resume">Resume</a></li>
-                        <li><Link to="/">Home</Link></li>
-                      </ul>
-                  </nav>
->>>>>>> formatting
-                </div>
+        <header className="home-header">
+          <div className="container">
+            <Nav/>
 
-                <div className="title">
-                    <h1> KAREN SIN </h1>
-                    <h4> Developer | Web Designer | Data Analyst </h4>
-                    <a href="#contacts" className="btn"> Let's Collab!</a> 
-                </div>
+            <div className="title">
+              <h1> KAREN SIN </h1>
+              <h4> Developer | Web Designer | Data Analyst </h4>
+              <a href="#contacts" className="btn"> Let's Collab!</a>
             </div>
+          </div>
         </header>
-        <section className= 'projects' id= "projects">
-          
-          <Projects/>
-          
+        <section className='projects' id="projects">
+
+          <Projects />
+
         </section>
-        <section className= 'resume' id='resume'> 
-         <Resume/> 
-   
+        <section className='resume' id='resume'>
+          <Resume />
+
         </section>
 
-        <section className='contacts' id='contacts'> 
+        <section className='contacts' id='contacts'>
           <h3> Get in touch </h3>
           <a>  kkwsin@gmail.com  </a>
-         <a href= 'https://www.linkedin.com/in/karensin94/'>  Linkedin  </a>
-         <a href= 'https://github.com/karensin'>  Github   </a> 
-         <a href= 'https://angel.co/karen-kaweng-sin'> Angel.co </a>
-             
-        
-         </section>
-      
-         <footer> KarenSin 2019</footer>
+          <a href='https://www.linkedin.com/in/karensin94/'>  Linkedin  </a>
+          <a href='https://github.com/karensin'>  Github   </a>
+          <a href='https://angel.co/karen-kaweng-sin'> Angel.co </a>
+
+
+        </section>
+
+        <footer> KarenSin 2019</footer>
 
       </div>
     );
