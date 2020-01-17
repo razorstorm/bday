@@ -41,7 +41,7 @@ h1 {
   height: 800px;
   padding: 0px;
   top: 0px;
-  position: relative;
+  /* position: relative; */
 }
 
 .App-title {
