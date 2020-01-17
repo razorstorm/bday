@@ -1,7 +1,8 @@
 body {
   font-family: 'Lucida Sans Unicode', 'Arial', serif;
   font-size: larger;
-  background-color: #1F2F48;
+  /* background-color: #1F2F48; */
+  background-color: rgb(24, 49, 72);
   color: white;
   height: 100%;
   min-height: 100%;
@@ -84,16 +85,13 @@ header .btn, .services {
 }
 
 header {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+  background-size: cover;
+  text-align: center;
 }
 
 .about, .contact {
   padding: 150px 0;
-}
-
-header {
-  background-size: cover;
-  text-align: center;
 }
 
 .projects {
@@ -101,10 +99,25 @@ header {
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-image: url("/portfolio2019/images/background.jpeg");
-  box-shadow: 0px 100px 100px 120px rgb(24, 49, 72) inset, 0px -10px 100px 100px rgb(24, 49, 72);
-  padding-top: 50px;
+  background-image: url("/images/projects_background.jpg");
+  box-shadow: 0px 100px 900px 50px rgb(24, 49, 72) inset, 0px -200px 200px 0px rgb(24, 49, 72) inset, 0px -100px 900px 50px rgb(24, 49, 72);
+  /* box-shadow: 0px 100px 200px 70px rgb(24, 49, 72) inset; */
+  padding-top: 100px;
 }
+
+/*
+.projects:before {
+  box-shadow: 0px -10px 200px 200px rgb(24, 49, 72);
+  content: " ";
+  height: 400px;
+  float: left;
+  position: relative;
+  top: 0;
+  display: inline-block;
+  margin-top: -200px;
+  width: 100%;
+}
+*/
 
 nav ul, .contact ul {
   list-style: none;
@@ -159,16 +172,25 @@ footer {
   text-align: center;
 }
 
+.resume {
+  width: 80%;
+  text-align: center;
+  padding: 0;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .resume * {
   position: relative;
   margin-top: 50px;
   width: 80%;
+  margin: auto;
 }
 
 .contacts {
   text-align: center;
   padding: 100px 100px 0 100px;
-  box-shadow: 0px 100px 100px 120px rgb(24, 49, 72) inset, 0px -10px 100px 100px rgb(24, 49, 72);
 }
 
 .contacts a {
@@ -209,12 +231,6 @@ p {
   margin-left: 50px;
   text-align: left;
   padding-bottom: 150px;
-}
-
-.resume {
-  width: 80%;
-  margin-left: 15%;
-  margin-right: 10%;
 }
 
 img {

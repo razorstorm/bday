@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     return (
       <header className={this.props.className + " intro-header"} style={{
-        background: `url("${'/portfolio2019/images/header.jpeg'}") no-repeat fixed center / cover`
+        background: `url("${process.env.PUBLIC_URL + '/images/header.jpeg'}") no-repeat fixed center / cover`
       }} >
         <Nav />
         {this.props.children}

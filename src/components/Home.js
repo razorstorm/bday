@@ -18,13 +18,9 @@ class Home extends Component {
             </div>
           </div>
         </Header>
-        <section className='projects' id="projects">
-          <Projects />
-        </section>
-        <section className='resume' id='resume'>
-          <Resume />
-        </section>
-      </div>
+        <Projects />
+        <Resume />
+      </div >
     );
   }
 }
