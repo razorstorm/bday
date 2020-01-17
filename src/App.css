@@ -37,11 +37,17 @@ h1 {
 }
 
 .home-header {
-  background-color: #222;
   height: 800px;
-  padding: 0px;
   top: 0px;
-  /* position: relative; */
+}
+
+.intro-header {
+  background-color: #222;
+  padding: 0px;
+}
+
+.about-header {
+  height: 500px;
 }
 
 .App-title {
