@@ -100,7 +100,7 @@ class App extends Component {
         <header className="App-header">
             <div className="container">
                 <div className="row">
-                        <nav>
+                        <nav className='navbar'>
                             <ul>
                             <li><a href="#contacts">Contact</a></li>
                             <li><Link to="/about">About Me</Link></li>
@@ -113,7 +113,7 @@ class App extends Component {
 
                 <div className="title">
                     <h1> KAREN SIN </h1>
-                    <h4> Developer | Web designer | Data Analyst </h4>
+                    <h4> Developer | Web Designer | Data Analyst </h4>
                     <a href="#contacts" className="btn"> Let's Collab!</a> 
                 </div>
             </div>
