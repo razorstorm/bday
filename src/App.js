@@ -5,7 +5,6 @@ import Projects from './components/Projects.js';
 import Bubbles from './components/Bubbles.js';
 import Resume from './components/Resume.js';
 import Nav from './components/Nav.js';
-import Home from './components/Home.js';
 
 const bubbleMoveSpeed = 2.5;
 const minBubbleTime = 50;
@@ -97,7 +96,6 @@ class App extends Component {
         <header className="home-header">
           <div className="container">
             <Nav/>
-
             <div className="title">
               <h1> KAREN SIN </h1>
               <h4> Developer | Web Designer | Data Analyst </h4>
@@ -106,13 +104,10 @@ class App extends Component {
           </div>
         </header>
         <section className='projects' id="projects">
-
           <Projects />
-
         </section>
         <section className='resume' id='resume'>
           <Resume />
-
         </section>
 
         <section className='contacts' id='contacts'>

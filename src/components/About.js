@@ -1,29 +1,15 @@
 import React, { Component } from 'react';
 import '../App.css';
-import {
-  BrowserRouter as Router,
-  Link,
-  Route
-} from 'react-router-dom';
+import Nav from './Nav.js';
 
 
 class About extends Component {
   render() {
     return (
       <div>
-        <header className="App-header">
+        <header className="head-header">
           <div className="container">
-            <div className="row">
-              <nav>
-                <ul>
-                  <li><a href='#contact'>Contact</a></li>
-                  <li><a href="/portfolio2019/about">About Me</a></li>
-                  <li><Link to="">Projects</Link></li>
-                  <li><a href="/" >Resume</a></li>
-                  <li> <Link to="/"> Home </Link> </li>
-                </ul>
-              </nav>
-            </div>
+            <Nav />
             <h3 className='title'> Hello There... </h3>
 
           </div>
