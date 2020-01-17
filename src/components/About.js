@@ -9,8 +9,8 @@ class About extends Component {
     return (
       <div>
         <header className="about-header intro-header">
+          <Nav />
           <div className="container">
-            <Nav />
             <h2 className='title'> Hello There... </h2>
           </div>
         </header>
@@ -32,8 +32,6 @@ class About extends Component {
             I am also an active lead in both Solano animal shelter and San Francisco SPCA in rehabilitating companion animals.
                     </p>
         </section>
-
-        <Contacts />
       </div>
     );
   }

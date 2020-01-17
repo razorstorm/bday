@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Projects from './components/Projects.js';
+import Contacts from './components/Contacts.js';
+import About from './components/About.js';
+import Home from './components/Home.js';
 import Bubbles from './components/Bubbles.js';
 import Resume from './components/Resume.js';
-import Nav from './components/Nav.js';
+
+import { BrowserRouter } from 'react-router-dom';
+import { Route, Link, Switch } from 'react-router-dom';
 
 const bubbleMoveSpeed = 2.5;
 const minBubbleTime = 50;
@@ -93,32 +97,14 @@ class App extends Component {
         <div className="bob">
           {bubbles}
         </div>
-        <header className="home-header">
-          <div className="container">
-            <Nav/>
-            <div className="title">
-              <h1> KAREN SIN </h1>
-              <h4> Developer | Web Designer | Data Analyst </h4>
-              <a href="#contacts" className="btn"> Let's Collab!</a>
-            </div>
-          </div>
-        </header>
-        <section className='projects' id="projects">
-          <Projects />
-        </section>
-        <section className='resume' id='resume'>
-          <Resume />
-        </section>
-
-        <section className='contacts' id='contacts'>
-          <h3> Get in touch </h3>
-          <a>  kkwsin@gmail.com  </a>
-          <a href='https://www.linkedin.com/in/karensin94/'>  Linkedin  </a>
-          <a href='https://github.com/karensin'>  Github   </a>
-          <a href='https://angel.co/karen-kaweng-sin'> Angel.co </a>
-        </section>
-        <footer> KarenSin 2019</footer>
-
+        <BrowserRouter basename="/portfolio2019">
+          <Switch>
+            <Route path="/about" component={About} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/" component={Home} />
+          </Switch>
+        </BrowserRouter>
+        <Contacts />
       </div>
     );
   }

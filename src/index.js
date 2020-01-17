@@ -10,12 +10,10 @@ import About from './components/About.js'
 
 ReactDOM.render(
   <BrowserRouter basename="/portfolio2019">
-    <Switch>
-      <Route exact path="/" component={App} />
-      <Route path="/about" component={About} />
-      <Route path="/resume" component={Resume} />
-    </Switch>
-  </BrowserRouter>
+  <Switch>
+    <Route path="/" component={App} />
+  </Switch>
+</BrowserRouter>
   , document.getElementById('root'))
 
 // If you want your app to work offline and load faster, you can change
