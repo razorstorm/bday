@@ -254,6 +254,7 @@ h3 {
   /* background-color: rgb */
   box-shadow: 0 0px 10px hsl(209, 50%, 80%);
   vertical-align: middle;
+  margin-bottom: 70px;
 }
 
 .pageTitle {
