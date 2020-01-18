@@ -8,7 +8,6 @@ class Nav extends Component {
   render() {
     return (
       <nav className="nav">
-        {/* <div className="container navbar-container"> */}
         <div className="row">
           <div className="col float-right"><Link to="/#contacts">Contact</Link></div>
           <div className="col float-right"><Link to="/about">About Me</Link></div>
@@ -16,7 +15,6 @@ class Nav extends Component {
           <div className="col float-right"><Link to="/#resume" >Resume</Link></div>
           <div className="col float-right"><Link to="/"> Home </Link> </div>
         </div>
-        {/* </div> */}
       </nav>
     );
   }

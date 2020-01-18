@@ -15,7 +15,7 @@ class Home extends Component {
             <div className="title">
               <h1> KAREN SIN </h1>
               <h4> Developer | Web Designer | Data Analyst </h4>
-              <Link to="/#contacts" className="btn">Let's Collab!</Link>
+              <Link to="/#contacts" className="btn collab-btn">Let's Collab</Link>
             </div>
           </div>
         </Header>
