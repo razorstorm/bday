@@ -1,4 +1,3 @@
-/* $primary-color: rgb(24, 49, 72); */
 
 body {
   font-family: 'Lucida Sans Unicode', 'Arial', serif;

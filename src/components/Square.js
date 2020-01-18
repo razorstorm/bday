@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Dimensions from 'react-dimensions';
-import { Card, Button } from 'react-bootstrap';
 
 import './Projects.css';
 
@@ -8,24 +7,6 @@ class Square extends Component {
   render() {
     const squareSize = '300px';
     return (
-
-      // <Card style={{ width: '18rem' }}>
-      //   <Card.Img style={{
-      //     width: '18rem',
-      //     height: '18rem',
-      //     backgroundImage: "url(" + this.props.imgSrc + ")"
-      //   }}
-      //     variant="top" src={this.props.imgSrc} />
-      //   <Card.Body>
-      //     <Card.Title>Card Title</Card.Title>
-      //     <Card.Text>
-      //       Some quick example text to build on the card title and make up the bulk of
-      //       the card's content.
-      //     </Card.Text>
-      //     <Button variant="primary">Go somewhere</Button>
-      //   </Card.Body>
-      // </Card>
-
       <div className="squareContainer">
         <div className="square flip-card">
           <a href={this.props.linkSrc} className={this.props.className}
