@@ -23,7 +23,7 @@ class Square extends Component {
                 }} />
               </div>
               <div class="flip-card-back flip-card-face">
-                <h5>{this.props.projName}</h5>
+                <h4>{this.props.projName}</h4>
                 {this.props.children}
               </div>
             </div>

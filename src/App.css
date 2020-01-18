@@ -5,7 +5,7 @@ body {
   font-size: larger;
   /* background-color: #1F2F48; */
   background-color: rgb(24, 49, 72);
-  color: white;
+  color: #E7E8EB;
   height: 100%;
   min-height: 100%;
   /* font-weight: 400; */
@@ -248,6 +248,7 @@ h3 {
   border-radius: 50%;
   margin: auto;
   background-color: hsl(209, 50%, 80%);
+  background-color: #E7E8EB;
   /* border: 1px solid hsl(209, 50%, 40%); */
   /* border-style: ridge; */
   /* background-color: rgb */
@@ -267,7 +268,7 @@ h3 {
   background: linear-gradient(0deg, rgb(24, 49, 72) 50%, rgba(24, 49, 72, 0.88) 80%, rgba(24, 49, 72, 0.7) 85%, rgba(0, 0, 0, 0) 100%);
 }
 
-.aboutmeSection strong {
+strong {
   color: hsl(209, 50%, 50%);
 }
 

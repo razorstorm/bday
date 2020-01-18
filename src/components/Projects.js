@@ -21,9 +21,7 @@ class Projects extends Component {
                                 <Square className="projectBox" imgSrc={process.env.PUBLIC_URL + "/images/MeeseeksBox.jpg"}
                                     linkSrc="https://www.facebook.com/meeseeksBox2019" projName="Meeseeks Bot">
                                     <p className="description">
-                                        Meeseeks bot is a messenger bot that is designed to perform automated voice
-                                        and text message responses. This technology required webhooks for token
-                                        verification and special features to make the user experience more entertaining
+                                        A <strong>facebook messenger bot</strong> that is automatically responds with text and voice lines from Rick and Morty. This project utilized <strong>webhooks</strong> for token authentication and the <strong>facebook messenger api</strong> to read and send messages.
                                         and exciting.
                                     </p>
                                 </Square>
@@ -33,9 +31,7 @@ class Projects extends Component {
                                 <Square className="projectBox" imgSrc={process.env.PUBLIC_URL + "/images/bloccit.png"}
                                     linkSrc="https://karensin-bloccit.herokuapp.com/" projName="Bloccit">
                                     <p className='description'>
-                                        An Application that uses the Model-View-Controller Pattern (MVC) to handle a seperation of concerns,
-                                        allowing easier manipulation in sections and functionality.
-                                        Application utilizes ExpressJS - Middleware to perform authentication and validation which allows users to sign up,
+                                        An <strong>online content aggregator</strong> and discussion community with <strong>ExpressJS</strong> and utilizes the <strong>Model-View-Controller (MVC)</strong> Pattern. The application uses <strong>ExpressJS Middleware</strong> to perform authentication and validation which allows users to sign up,
                                         sign in and create topics, posts, comments and votes amongst others.
                                     </p>
                                 </Square>
@@ -44,8 +40,8 @@ class Projects extends Component {
                                 <Square className="projectBox" imgSrc={process.env.PUBLIC_URL + "/images/Chatty.png"}
                                     linkSrc="https://chat-ty.herokuapp.com/" projName="Chatty">
                                     <p className='description'>
-                                        An application based on Firebase (BaaS) that authenticate users
-                                        using Google sign-in, sends and recieves messages in real time
+                                        An <strong>instant messaging</strong> system with <strong>Firebase (BaaS)</strong> backend. Chat-ty allows users to authenticate
+                                        using <strong>Google sign-in</strong> to sends and recieves messages in real time.
                                     </p>
                                 </Square>
                             </Col>
@@ -54,7 +50,7 @@ class Projects extends Component {
                                 <Square className="projectBox" imgSrc={process.env.PUBLIC_URL + "/images/musicPlayer.jpg"}
                                     linkSrc="https://jams-ksin.herokuapp.com/" projName="MusicPlayer">
                                     <p className='description'>
-                                        A music player made using React Router to create a Single-Page Application to handle client-side page transitions
+                                        A <strong>HTML5 music player</strong> made using <strong>React</strong> and <strong>React Router</strong> to create a Single-Page Application to handle client-side page transitions.
                                     </p>
                                 </Square>
                             </Col>
