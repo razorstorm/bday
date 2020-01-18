@@ -41,7 +41,7 @@ class Projects extends Component {
                                 </Square>
                             </Col>
                             <Col>
-                                <Square className="projectBox white-bg" imgSrc={process.env.PUBLIC_URL + "/images/Chatty.png"}
+                                <Square className="projectBox" imgSrc={process.env.PUBLIC_URL + "/images/Chatty.png"}
                                     linkSrc="https://chat-ty.herokuapp.com/" projName="Chatty">
                                     <p className='description'>
                                         An application based on Firebase (BaaS) that authenticate users
