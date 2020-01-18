@@ -23,3 +23,4 @@ class Square extends Component {
 }
 
 export default Dimensions()(Square);
+
