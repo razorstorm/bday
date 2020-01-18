@@ -30,7 +30,7 @@ class Projects extends Component {
                             </Col>
 
                             <Col>
-                                <Square className="projectBox" imgSrc={process.env.PUBLIC_URL + "/images/bloccit.jpg"}
+                                <Square className="projectBox" imgSrc={process.env.PUBLIC_URL + "/images/bloccit.png"}
                                     linkSrc="https://karensin-bloccit.herokuapp.com/" projName="Bloccit">
                                     <p className='description'>
                                         An Application that uses the Model-View-Controller Pattern (MVC) to handle a seperation of concerns,
@@ -41,7 +41,7 @@ class Projects extends Component {
                                 </Square>
                             </Col>
                             <Col>
-                                <Square className="projectBox" imgSrc={process.env.PUBLIC_URL + "/images/Chatty.png"}
+                                <Square className="projectBox white-bg" imgSrc={process.env.PUBLIC_URL + "/images/Chatty.png"}
                                     linkSrc="https://chat-ty.herokuapp.com/" projName="Chatty">
                                     <p className='description'>
                                         An application based on Firebase (BaaS) that authenticate users
