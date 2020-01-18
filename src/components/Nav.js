@@ -7,17 +7,17 @@ import { HashLink as Link } from 'react-router-hash-link';
 class Nav extends Component {
   render() {
     return (
-      <div className="row">
-        <nav className='navbar'>
-          <ul>
-            <li><Link to="/#contacts">Contact</Link></li>
-            <li><Link to="/about">About Me</Link></li>
-            <li><Link to="/#projects">Projects</Link></li>
-            <li><Link to="/#resume" >Resume</Link></li>
-            <li><Link to="/"> Home </Link> </li>
-          </ul>
-        </nav>
-      </div>
+      <nav className="nav">
+        {/* <div className="container navbar-container"> */}
+        <div className="row">
+          <div className="col float-right"><Link to="/#contacts">Contact</Link></div>
+          <div className="col float-right"><Link to="/about">About Me</Link></div>
+          <div className="col float-right"><Link to="/#projects">Projects</Link></div>
+          <div className="col float-right"><Link to="/#resume" >Resume</Link></div>
+          <div className="col float-right"><Link to="/"> Home </Link> </div>
+        </div>
+        {/* </div> */}
+      </nav>
     );
   }
 }
