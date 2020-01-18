@@ -7,18 +7,17 @@ class About extends Component {
   render() {
     return (
       <div>
-        <Header className="about-header intro-header">
+        <Header className="home-header intro-header">
           <div className="container">
             <div className="title">
               <h1>KAREN SIN</h1>
               <h4>Developer | Web Designer | Data Analyst</h4>
-              <h2 className="pageTitle">About Me</h2>
             </div>
           </div>
         </Header>
         <section className='aboutmeSection'>
+          <h2 className="pageTitle">About Me</h2>
           <h3 className='titleName'>Experience... </h3>
-
           <p className='aboutme'>
             I am a web designer/ developer /former data analyst based in San Francisco, California.
             I am passionate in frontend development and technology. My goals are to focus on typography and create simple and user friendly UI/UX experience.
