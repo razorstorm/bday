@@ -11,12 +11,10 @@ class Home extends Component {
     return (
       <div className="home">
         <Header className="home-header intro-header">
-          <div className="container">
-            <div className="title">
-              <h1> KAREN SIN </h1>
-              <h4> Developer | Web Designer | Data Analyst </h4>
-              <Link to="/#contacts" className="btn collab-btn">Let's Collab</Link>
-            </div>
+          <div className="title">
+            <h1> KAREN SIN </h1>
+            <h4> Developer | Web Designer | Data Analyst </h4>
+            <Link to="/#contacts" className="btn collab-btn">Let's Collab</Link>
           </div>
         </Header>
         <div className="projBGBG" style={{
