@@ -5,14 +5,14 @@ import './Projects.css';
 
 class Square extends Component {
   render() {
-    const squareSize = '300px';
+    const squareSize = '20rem';
     return (
       <div className="squareContainer">
         <div className="square flip-card">
           <a href={this.props.linkSrc} className={this.props.className}
             style={{
-              width: '20rem',
-              height: '20rem'
+              width: squareSize,
+              height: squareSize
             }}>
             <div class="flip-card-inner">
               <div class="flip-card-front flip-card-face">

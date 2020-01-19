@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import Projects from './Projects.js';
-import Resume from './Resume.js';
 import Header from './Header.js';
 import About from './About.js';
 import { HashLink as Link } from 'react-router-hash-link';

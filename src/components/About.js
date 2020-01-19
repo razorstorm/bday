@@ -9,7 +9,7 @@ class About extends Component {
         <section className='aboutmeSection'>
           <h2 className="pageTitle">About Me</h2>
           <div className="aboutProfilePicWrapper">
-            <img className="aboutProfilePic" alt="profile picture" src={process.env.PUBLIC_URL + "/images/purty.jpeg"} />
+            <img className="aboutProfilePic" alt="profile" src={process.env.PUBLIC_URL + "/images/purty.jpeg"} />
           </div>
           <h3 className='titleName'>Experience... </h3>
           <p className='aboutme'>
