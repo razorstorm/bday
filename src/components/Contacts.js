@@ -20,7 +20,7 @@ class Contacts extends Component {
                             <i class="fab fa-2x fa-github"></i>
                         </a>
                         <a target="_blank" href='https://angel.co/karen-kaweng-sin'>
-                            <i class="fas fa-2x fa-angellist"></i>
+                            <i class="fa fa-2x fa-angellist"></i>
                         </a>
                     </section>
                 </section>
