@@ -15,16 +15,12 @@
 
 .projectName {
   color: white;
-  /* border: white 3px solid; */
   text-align: center;
   display: inline-block;
   padding: 20px 20px;
-  /* background: rgba(255, 255, 255, 0.4); */
   font-size: 25pt;
-  font-family: "Garamond", sans-serif;
   position: relative;
   top: 35%;
-  /* text-shadow: 0px 0px 100px rgba(255, 255, 255, 1), 0px 0px 100px rgba(255, 255, 255, 1), 0px 0px 100px rgba(255, 255, 255, 1), ; */
 }
 
 .projectsBox {
