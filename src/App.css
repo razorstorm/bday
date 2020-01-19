@@ -17,11 +17,10 @@ html {
 .title * {
   font-weight: 200;
   text-shadow: 0px 0px 50px white;
-  /* margin-top: 10%; */
   text-align: middle;
 }
 
-h2 {
+h2, h3 {
   font-weight: 200;
 }
 
@@ -254,6 +253,7 @@ h3 {
 .aboutmeWrapper {
   margin-top: 100px;
   text-align: center;
+  /* background: linear-gradient(0deg, rgb(24, 49, 72) 50%, rgba(24, 49, 72, 0.88) 80%, rgba(24, 49, 72, 0.7) 85%, rgba(0, 0, 0, 0) 100%); */
 }
 
 .aboutProfilePic {
@@ -261,8 +261,6 @@ h3 {
   height: 230px;
   border-radius: 50%;
   margin-top: 10px;
-  /* border: 10px solid rgba(255, 255, 255, 0.8); */
-  /* box-sizing: content-box; */
   vertical-align: middle;
   display: inline-block;
 }
@@ -274,15 +272,14 @@ h3 {
   margin: auto;
   background-color: hsl(209, 50%, 80%);
   background-color: #E7E8EB;
-  /* border: 1px solid hsl(209, 50%, 40%); */
-  /* border-style: ridge; */
-  /* background-color: rgb */
   box-shadow: 0 0px 10px hsl(209, 50%, 80%);
   vertical-align: middle;
   margin-bottom: 70px;
 }
 
 .pageTitle {
+  position: relative;
+  text-align: center;
   font-size: 45pt;
 }
 
@@ -293,7 +290,6 @@ h3 {
   /* padding-top: 100px; */
   margin: auto;
   text-align: center;
-  background: linear-gradient(0deg, rgb(24, 49, 72) 50%, rgba(24, 49, 72, 0.88) 80%, rgba(24, 49, 72, 0.7) 85%, rgba(0, 0, 0, 0) 100%);
 }
 
 strong {
@@ -314,12 +310,17 @@ img {
 
 .projBGBG {
   position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* height: 100%; */
   width: 100%;
+  z-index: -1;
 }
 
 .projBGShadow {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, rgba(24, 49, 72, 0.7) 85%, rgba(24, 49, 72, 0.88) 91%, rgba(24, 49, 72, 1) 99%), linear-gradient(0deg, rgba(24, 49, 72, 1) 5%, rgba(0, 0, 0, 0) 20%);
   display: block;
+  height: 100%;
   pointer-events: none;
 }
 

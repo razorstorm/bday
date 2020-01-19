@@ -2,13 +2,8 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Contacts from './components/Contacts.js';
-import About from './components/About.js';
 import Home from './components/Home.js';
 import Bubbles from './components/Bubbles.js';
-import Resume from './components/Resume.js';
-
-import { BrowserRouter } from 'react-router-dom';
-import { Route, Switch } from 'react-router-dom';
 
 const bubbleMoveSpeed = 2.5;
 const minBubbleTime = 50;

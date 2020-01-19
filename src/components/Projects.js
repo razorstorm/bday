@@ -15,6 +15,7 @@ class Projects extends Component {
     return (
       <div className="projectsWrapper">
         <section className='projects' id="projects">
+          <h2 className="pageTitle">Select Projects</h2>
           <Container fluid={true}>
             <Row className='projectsBox'>
               <Col>
