@@ -4,6 +4,7 @@ import '../App.css';
 import Projects from './Projects.js';
 import Resume from './Resume.js';
 import Header from './Header.js';
+import About from './About.js';
 import { HashLink as Link } from 'react-router-hash-link';
 
 class Home extends Component {
@@ -26,6 +27,7 @@ class Home extends Component {
         </div>
         <Projects />
         <Resume />
+        <About />
       </div >
     );
   }

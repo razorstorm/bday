@@ -98,13 +98,7 @@ class App extends Component {
         <div className="bob">
           {bubbles}
         </div>
-        <BrowserRouter basename="/portfolio2019">
-          <Switch>
-            <Route path="/about" component={About} />
-            <Route path="/resume" component={Resume} />
-            <Route path="/" component={Home} />
-          </Switch>
-        </BrowserRouter>
+        <Home />
         <Contacts />
       </div>
     );

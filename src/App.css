@@ -5,6 +5,7 @@ body {
   color: #E7E8EB;
   height: 100%;
   min-height: 100%;
+  font-weight: 300;
 }
 
 .title * {
@@ -12,6 +13,10 @@ body {
   text-shadow: 0px 0px 50px white;
   /* margin-top: 10%; */
   text-align: middle;
+}
+
+h2 {
+  font-weight: 200;
 }
 
 .title {
@@ -248,6 +253,7 @@ h3 {
 }
 
 .aboutmeWrapper {
+  margin-top: 100px;
   text-align: center;
 }
 
