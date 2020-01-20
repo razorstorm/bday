@@ -256,10 +256,6 @@ footer {
 
 .resume .carousel {
   position: relative;
-  width: 60%;
-  max-width: 1440px;
-  min-width: 720px;
-  margin: auto;
 }
 
 .contacts {
@@ -394,5 +390,12 @@ img {
 
 .carousel-inner {
   padding: 0;
-  margin: 0;
+  width: 60%;
+  max-width: 1440px;
+  min-width: 720px;
+  margin: auto;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  font-size: 40pt;
 }
