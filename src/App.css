@@ -13,7 +13,7 @@ html {
   height: 100%;
   scroll-behavior: smooth;
 }
-
+ 
 .title * {
   font-weight: 200;
   text-shadow: 0px 0px 50px white;
@@ -45,12 +45,13 @@ h2, h3 {
 } */
 
 .scrolldown {
-  bottom: 0px;
+  bottom: 4%;
   position: absolute;
   display: block;
   margin: auto;
   width: 100%;
   font-size: 40pt;
+ 
   /* font-weight: 200; */
 }
 

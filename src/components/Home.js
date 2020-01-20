@@ -19,12 +19,16 @@ class Home extends Component {
                   <h1> KAREN SIN </h1>
                   <h4> Developer | Web Designer | Data Analyst </h4>
 
-                  <Link to="/#contacts" className="btn collab-btn">Let's Collab</Link>
+                  <Link to="/#projects" className="btn collab-btn"><i className=""></i> Learn more about what I do</Link>
                 </div>
               </div>
             </div>
           </div>
-          <section className="scrolldown"><Link to="/#projects"><i className="fa fa-angle-double-down"></i></Link></section>
+          <section className="scrolldown"><Link to="/#projects">
+
+            <i className="fas fa-angle-double-down"></i>
+          </Link>
+          </section>
         </Header>
         <div className="projBGBG" style={{
           background: `url("${process.env.PUBLIC_URL + '/images/projects_background.jpg'}") no-repeat center / cover`
