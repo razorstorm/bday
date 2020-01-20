@@ -90,6 +90,14 @@ h2, h3, h4, h5, h6, h7 {
   min-height: 720px;
 }
 
+/* .headerBG:before, .headerBG:after {
+  background: url("/images/header.jpeg") no-repeat fixed center / cover;
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+} */
+
 .home-header .headerShadow {
   width: 100%;
   position: absolute;
@@ -106,6 +114,13 @@ h2, h3, h4, h5, h6, h7 {
 .home {
   top: 0;
   position: relative;
+}
+
+.home::before {
+  display: block;
+  content: '';
+  /* height: 70px; */
+  /* or whatever */
 }
 
 .home-header {
@@ -181,7 +196,8 @@ nav.nav {
   flex-direction: row-reverse;
   position: fixed;
   width: 100%;
-  background-color: rgba(24, 49, 72, 0.8);
+  background-color: rgb(24, 49, 72);
+  /* background-color: rgba(24, 49, 72, 0.8); */
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   z-index: 100;
   display: block;
@@ -235,12 +251,14 @@ footer {
 .resume {
   text-align: center;
   padding: 0;
-  margin-left: auto;
+  margin: auto;
 }
 
 .resume .carousel {
   position: relative;
-  width: 80%;
+  width: 60%;
+  max-width: 1440px;
+  min-width: 720px;
   margin: auto;
 }
 

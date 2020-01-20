@@ -16,16 +16,14 @@ class Home extends Component {
             <div className="row h-100 align-items-center">
               <div className="col">
                 <div className="title">
-                  <h1> KAREN SIN </h1>
-                  <h4> Developer | Web Designer | Data Analyst </h4>
-
+                  <h1>KAREN SIN</h1>
+                  <h4>Developer | Web Designer | Data Analyst</h4>
                   <Link to="/#projects" className="btn collab-btn"><i className=""></i> Learn more about what I do</Link>
                 </div>
               </div>
             </div>
           </div>
           <section className="scrolldown"><Link to="/#projects">
-
             <i className="fas fa-angle-double-down"></i>
           </Link>
           </section>
