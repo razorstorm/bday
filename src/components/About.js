@@ -5,7 +5,7 @@ import '../App.css';
 class About extends Component {
   render() {
     return (
-      <div className='aboutmeWrapper' id="about">
+      <div className='aboutmeWrapper homePageSection' id="about">
         <section className='aboutmeSection'>
           <h2 className="pageTitle">About Me</h2>
           <div className="aboutProfilePicWrapper">
@@ -13,7 +13,7 @@ class About extends Component {
           </div>
           <h3 className='titleName'>Experience... </h3>
           <p className='aboutme'>
-            I am a  <strong> web designer / developer / former data analyst</strong> based in <strong>San Francisco, California</strong>.
+            I am a <strong> web designer / developer / former data analyst</strong> based in <strong>San Francisco, California</strong>.
             I am passionate in <strong>frontend development</strong> and technology.
             My goals are to focus creating simple and user friendly UI/UX experiences.
             My experience at Apple allowed me to work and improve as a team player. I worked closely with designers on new map features which included planning out workflows on the delivery of the features to maximize discoverability, interface behaviors, and how information is being navigated and displayed. I built analytics dashboards with <strong>PostgreSQL, ArcGIS, and QGIS</strong> to report on

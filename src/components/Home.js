@@ -4,8 +4,8 @@ import '../App.css';
 import Projects from './Projects.js';
 import Header from './Header.js';
 import About from './About.js';
+import Resume from './Resume.js';
 import { HashLink as Link } from 'react-router-hash-link';
-import Contacts from './Contacts';
 
 class Home extends Component {
   render() {
@@ -38,8 +38,8 @@ class Home extends Component {
           </div>
         </div>
         <Projects />
-        {/* <Resume /> */}
         <About />
+        <Resume />
       </div >
     );
   }

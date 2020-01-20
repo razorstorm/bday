@@ -4,6 +4,7 @@ import './App.css';
 import Contacts from './components/Contacts.js';
 import Home from './components/Home.js';
 import Bubbles from './components/Bubbles.js';
+import Nav from './components/Nav.js';
 
 
 const bubbleMoveSpeed = 2.5;
@@ -94,9 +95,9 @@ class App extends Component {
         <div className="bob">
           {bubbles}
         </div>
+        <Nav />
         <Home />
         <Contacts />
-
       </div>
     );
   }

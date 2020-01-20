@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Nav from './Nav.js';
 import '../App.css';
 
 class Header extends Component {
@@ -14,7 +13,6 @@ class Header extends Component {
         }} >
           <div className="headerShadow"></div>
         </div>
-        <Nav />
         {this.props.children}
       </header >
     );

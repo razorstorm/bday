@@ -22,7 +22,7 @@ html {
   /* -webkit-filter: drop-shadow(0px 0px 400px 200px white); */
 }
 
-h2, h3 {
+h2, h3, h4, h5, h6, h7 {
   font-weight: 200;
 }
 
@@ -45,7 +45,7 @@ h2, h3 {
 } */
 
 .scrolldown {
-  bottom: 4%;
+  bottom: 15px;
   position: absolute;
   display: block;
   margin: auto;
@@ -228,19 +228,18 @@ footer {
   text-align: center;
 }
 
-.resume {
-  width: 80%;
-  text-align: center;
-  padding: 0;
-  margin-top: 50px;
-  margin-left: auto;
-  box-shadow: 100px 100px 100px 20px rgba(24, 49, 72, 0.95);
-  background: linear-gradient(0deg, rgba(24, 49, 72, 1) 0%, rgba(24, 49, 72, 0.95) 5%, rgba(24, 49, 72, 0.7) 15%, rgba(24, 49, 72, 0.2) 30%, rgba(24, 49, 72, 0) 50%);
+.homePageSection {
+  margin-top: 100px;
 }
 
-.resume * {
+.resume {
+  text-align: center;
+  padding: 0;
+  margin-left: auto;
+}
+
+.resume .carousel {
   position: relative;
-  margin-top: 50px;
   width: 80%;
   margin: auto;
 }
@@ -279,7 +278,6 @@ h3 {
 }
 
 .aboutmeWrapper {
-  margin-top: 100px;
   text-align: center;
   /* background: linear-gradient(0deg, rgb(24, 49, 72) 50%, rgba(24, 49, 72, 0.88) 80%, rgba(24, 49, 72, 0.7) 85%, rgba(0, 0, 0, 0) 100%); */
 }
@@ -376,6 +374,7 @@ img {
   transition: transform 6s, -webkit-transform 1s ease;
 }
 
-.move {
-  padding: 15%;
+.carousel-inner {
+  padding: 0;
+  margin: 0;
 }

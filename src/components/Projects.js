@@ -13,7 +13,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="projectsWrapper">
+      <div className="projectsWrapper homePageSection">
         <section className='projects' id="projects">
           <h2 className="pageTitle">Select Projects</h2>
           <Container fluid={true}>
