@@ -13,7 +13,7 @@ html {
   height: 100%;
   scroll-behavior: smooth;
 }
- 
+
 .title * {
   font-weight: 200;
   text-shadow: 0px 0px 50px white;
@@ -51,7 +51,6 @@ h2, h3 {
   margin: auto;
   width: 100%;
   font-size: 40pt;
- 
   /* font-weight: 200; */
 }
 
@@ -179,13 +178,11 @@ nav.nav {
   padding-right: 50px;
   height: 70px;
   color: white;
-  /* padding-top: 30px; */
-  /* padding-left: 30px; */
   flex-direction: row-reverse;
   position: fixed;
   width: 100%;
-  background-color: rgb(24, 49, 72);
-  opacity: 0.8;
+  background-color: rgba(24, 49, 72, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   z-index: 100;
   display: block;
 }
@@ -370,17 +367,15 @@ img {
   font-weight: 200;
   text-shadow: 0px 0px 50px white;
   text-align: center;
- 
   /* filter: blur(2px); */
   /* -webkit-filter: drop-shadow(0px 0px 400px 200px white); */
 }
 
 .carousel-inner .carousel-item {
   transition: -webkit-transform 12s ease;
-  transition: transform 6s , -webkit-transform 1s ease;
+  transition: transform 6s, -webkit-transform 1s ease;
 }
 
-.move{
-  padding: 15% ;
-  
+.move {
+  padding: 15%;
 }
