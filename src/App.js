@@ -5,6 +5,7 @@ import Contacts from './components/Contacts.js';
 import Home from './components/Home.js';
 import Bubbles from './components/Bubbles.js';
 
+
 const bubbleMoveSpeed = 2.5;
 const minBubbleTime = 50;
 const maxBubbleTime = 1000;
@@ -95,6 +96,7 @@ class App extends Component {
         </div>
         <Home />
         <Contacts />
+
       </div>
     );
   }

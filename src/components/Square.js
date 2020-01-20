@@ -14,15 +14,15 @@ class Square extends Component {
               width: squareSize,
               height: squareSize
             }}>
-            <div class="flip-card-inner">
-              <div class="flip-card-front flip-card-face">
+            <div className="flip-card-inner">
+              <div className="flip-card-front flip-card-face">
                 <div className="projectImg" style={{
                   width: '100%',
                   height: '100%',
                   backgroundImage: "url(" + this.props.imgSrc + ")"
                 }} />
               </div>
-              <div class="flip-card-back flip-card-face">
+              <div className="flip-card-back flip-card-face">
                 <h4>{this.props.projName}</h4>
                 {this.props.children}
               </div>

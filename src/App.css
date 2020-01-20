@@ -220,7 +220,8 @@ footer {
   padding: 0;
   margin-top: 50px;
   margin-left: auto;
-  margin-right: auto;
+  box-shadow: 100px 100px 100px 20px rgba(24, 49, 72, 0.95);
+  background: linear-gradient(0deg, rgba(24, 49, 72, 1) 0%, rgba(24, 49, 72, 0.95) 5%, rgba(24, 49, 72, 0.7) 15%, rgba(24, 49, 72, 0.2) 30%, rgba(24, 49, 72, 0) 50%);
 }
 
 .resume * {
@@ -346,4 +347,22 @@ img {
 .copyright {
   font-size: 8pt;
   text-align: center;
+}
+
+.title * {
+  font-weight: 200;
+  text-shadow: 0px 0px 50px white;
+  text-align: center;
+  /* filter: blur(2px); */
+  /* -webkit-filter: drop-shadow(0px 0px 400px 200px white); */
+}
+
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 12s ease;
+  transition: transform 6s , -webkit-transform 1s ease;
+}
+
+.move{
+  padding: 15% ;
+  
 }

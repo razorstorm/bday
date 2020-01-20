@@ -5,11 +5,13 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Route, Switch } from 'react-router-dom';
+import Resume from './components/Resume.js';
 
 ReactDOM.render(
   <BrowserRouter basename="/portfolio2019">
     <Switch>
-      <Route path="/" component={App} />
+      <Route exact path="/" component={App} />
+      <Route exact path="/resume" component={Resume} />
     </Switch>
   </BrowserRouter>
   , document.getElementById('root'))
