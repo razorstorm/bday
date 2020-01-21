@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import Carousel from 'react-bootstrap/Carousel'
 
-{/* <img alt='resume page 1' className='resumePage' "} />
-        <img alt='resume page 2' className='resumePage'  /> */}
-
-
 class DemoCarousel extends Component {
   render() {
     return (

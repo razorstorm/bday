@@ -90,6 +90,10 @@ h2, h3, h4, h5, h6, h7 {
   min-height: 720px;
 }
 
+.homeContent, .pageFooter {
+  background-color: rgb(24, 49, 72);
+}
+
 /* .headerBG:before, .headerBG:after {
   background: url("/images/header.jpeg") no-repeat fixed center / cover;
   content: "";
@@ -245,12 +249,18 @@ footer {
 }
 
 .homePageSection {
-  margin-top: 100px;
+  padding-top: 100px;
+  z-index: 2;
+}
+
+.homePageSection h1, h2, h3, h4, h5, p {
+  position: relative;
 }
 
 .resume {
   text-align: center;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
   margin: auto;
 }
 
@@ -315,6 +325,7 @@ h3 {
   box-shadow: 0 0px 10px hsl(209, 50%, 80%);
   vertical-align: middle;
   margin-bottom: 70px;
+  position: relative;
 }
 
 .pageTitle {
@@ -354,7 +365,7 @@ img {
   background-repeat: no-repeat;
   /* height: 100%; */
   width: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .projBGShadow {
@@ -362,6 +373,7 @@ img {
   display: block;
   height: 100%;
   pointer-events: none;
+  z-index: 1;
 }
 
 .projBG {

@@ -13,8 +13,8 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="projectsWrapper homePageSection">
-        <section className='projects' id="projects">
+      <div className="projectsWrapper homePageSection" id="projects">
+        <section className='projects'>
           <h2 className="pageTitle">Select Projects</h2>
           <Container fluid={true}>
             <Row className='projectsBox'>

@@ -10,8 +10,8 @@ import { HashLink as Link } from 'react-router-hash-link';
 class Home extends Component {
   render() {
     return (
-      <div className="home">
-        <Header className="home-header intro-header">
+      <div className="home" id="home">
+        <Header className="home-header">
           <div className="container h-100">
             <div className="row h-100 align-items-center">
               <div className="col">
@@ -28,16 +28,18 @@ class Home extends Component {
           </Link>
           </section>
         </Header>
-        <div className="projBGBG" style={{
-          background: `url("${process.env.PUBLIC_URL + '/images/projects_background.jpg'}") no-repeat center / cover`
-        }}>
-          <div className="projBGShadow">
-            <img alt="background" className="projBG" src={process.env.PUBLIC_URL + '/images/projects_background.jpg'}></img>
+        <div className="homeContent">
+          <div className="projBGBG" style={{
+            background: `url("${process.env.PUBLIC_URL + '/images/projects_background.jpg'}") no-repeat center / cover`
+          }}>
+            <div className="projBGShadow">
+              <img alt="background" className="projBG" src={process.env.PUBLIC_URL + '/images/projects_background.jpg'}></img>
+            </div>
           </div>
+          <Projects />
+          <About />
+          <Resume />
         </div>
-        <Projects />
-        <About />
-        <Resume />
       </div >
     );
   }
