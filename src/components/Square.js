@@ -9,7 +9,7 @@ class Square extends Component {
     return (
       <div className="squareContainer">
         <div className="square flip-card">
-          <a href={this.props.linkSrc} className={this.props.className}
+          <a href={this.props.linkSrc} className={this.props.className + ' projectBox'}
             style={{
               width: squareSize,
               height: squareSize
