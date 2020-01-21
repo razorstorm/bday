@@ -3,6 +3,8 @@ import Dimensions from 'react-dimensions';
 
 import './Projects.css';
 
+
+// TODO: Add todolist, add tictactoe, add super potato
 class Square extends Component {
   render() {
     const squareSize = '20rem';
