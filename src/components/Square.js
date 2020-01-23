@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Dimensions from 'react-dimensions';
-
+import Button from 'react-bootstrap/Button'
 import './Projects.css';
 
 
@@ -31,8 +31,11 @@ class Square extends Component {
             </div>
           </a>
         </div>
-        <div className="projectName">{this.props.projName}</div>
-      </div>
+        <div className="projectName">{this.props.projName}
+          {/* <Button href={this.props.gitLink}> click me
+          </Button> */}
+        </div>
+      </div >
     );
   }
 }

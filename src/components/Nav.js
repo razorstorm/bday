@@ -9,7 +9,7 @@ class Nav extends Component {
       <nav className="nav">
         <div className="row">
           <div className="col float-right"><Link to="/#contacts">Contact</Link></div>
-          <div className="col float-right"><Link to="/#resume" >Resume</Link></div>
+          {/* <div className="col float-right"><Link to="/#resume" >Resume</Link></div> */}
           <div className="col float-right"><Link to="/#about">About Me</Link></div>
           <div className="col float-right"><Link to="/#projects">Projects</Link></div>
           <div className="col float-right"><Link to="/#home">Home</Link> </div>

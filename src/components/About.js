@@ -26,6 +26,7 @@ class About extends Component {
             I am also an active lead in both Solano animal shelter and San Francisco SPCA in rehabilitating companion animals.
           </p>
         </section>
+
       </div>
     );
   }

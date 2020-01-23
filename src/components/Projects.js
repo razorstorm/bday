@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Projects.css';
 import Square from './Square.js';
-
+import Button from 'react-bootstrap/Button'
 
 class Projects extends Component {
   constructor(props) {
@@ -19,8 +19,28 @@ class Projects extends Component {
           <Container fluid={true}>
             <Row className='projectsBox'>
               <Col>
+                <Square imgSrc={process.env.PUBLIC_URL + "/images/toeWars.png"}
+                  linkSrc="https://karensin.github.io/toeWars/" projName="Tic-Tac-Toe Wars">
+
+                  <p className='description'>
+                    A <strong>Star Wars Inspired Tic-Tac-Toe</strong> made using <strong>React</strong> May the fun be with you!
+                  </p>
+                  {/* <a href="google.com" > </a> */}
+
+                </Square>
+
+              </Col>
+              <Col>
+                <Square imgSrc={process.env.PUBLIC_URL + "/images/todolist.jpeg"}
+                  linkSrc="https://karensin.github.io/toeWars/" projName="To-Do List">
+                  <p className='description'>
+                    A <strong>To-Do List </strong> made using <strong>React</strong>. Keep track of your tasks, manage them online and stay organized!
+                  </p>
+                </Square>
+              </Col>
+              <Col>
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/MeeseeksBox.jpg"}
-                  linkSrc="https://www.facebook.com/meeseeksBox2019" projName="Meeseeks Bot">
+                  linkSrc="https://www.facebook.com/meeseeksBox2019" projName="Meeseeks Bot" gitLink="google.com" >
                   <p className="description">
                     A <strong>facebook messenger bot</strong> that is automatically responds with text and voice lines from Rick and Morty. This project utilized <strong>webhooks</strong> for token authentication and the <strong>facebook messenger api</strong> to read and send messages.
                     and exciting.
@@ -53,8 +73,11 @@ class Projects extends Component {
                   <p className='description'>
                     A <strong>HTML5 music player</strong> made using <strong>React</strong> and <strong>React Router</strong> to create a Single-Page Application to handle client-side page transitions.
                   </p>
+
                 </Square>
               </Col>
+
+
             </Row>
           </Container>
         </section>

@@ -38,7 +38,7 @@ class Home extends Component {
           </div>
           <Projects />
           <About />
-          <Resume />
+          {/* <Resume /> */}
         </div>
       </div >
     );
