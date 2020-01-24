@@ -27,12 +27,12 @@ class Projects extends Component {
                     A <strong>Star Wars Inspired Tic-Tac-Toe</strong> made using <strong>React</strong> May the fun be with you!
                   </p>
                 </Square>
-                <a className="top" href="http://google.com"> click me</a>
+                {/* <a className="top" href="http://google.com"> click me</a> */}
               </Col>
-              <a className="top" href="http://google.com"> click me</a>
+              {/* <a className="top" href="http://google.com"> click me</a> */}
               <Col>
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/todolist.jpeg"}
-                  linkSrc="https://karensin.github.io/toeWars/" projName="To-Do List">
+                  linkSrc="https://karensin.github.io/todoList/" projName="To-Do List">
                   <p className='description'>
                     A <strong>To-Do List </strong> made using <strong>React</strong>. Keep track of your tasks, manage them online and stay organized!
                   </p>
