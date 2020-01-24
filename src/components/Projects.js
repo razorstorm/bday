@@ -24,8 +24,11 @@ class Projects extends Component {
                   linkSrc="https://karensin.github.io/toeWars/" projName="Tic-Tac-Toe Wars">
 
                   <p className='description'>
-                    A <strong>Star Wars Inspired Tic-Tac-Toe</strong> made using <strong>React</strong> May the fun be with you!
+                    A <strong>Star Wars Inspired Tic-Tac-Toe</strong> made using <strong>React</strong>.
+                    <p>    May the fun be with you! </p>
                   </p>
+
+
                 </Square>
                 {/* <a className="top" href="http://google.com"> click me</a> */}
               </Col>
@@ -43,7 +46,7 @@ class Projects extends Component {
                   linkSrc="https://www.facebook.com/meeseeksBox2019" projName="Meeseeks Bot" gitLink="google.com" >
                   <p className="description">
                     A <strong>facebook messenger bot</strong> that is automatically responds with text and voice lines from Rick and Morty. This project utilized <strong>webhooks</strong> for token authentication and the <strong>facebook messenger api</strong> to read and send messages.
-                    and exciting.
+
                   </p>
                 </Square>
 
