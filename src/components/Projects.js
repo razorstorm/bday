@@ -15,7 +15,8 @@ class Projects extends Component {
     return (
       <div className="projectsWrapper homePageSection" id="projects">
         <section className='projects'>
-          <h2 className="pageTitle">Select Projects</h2>
+          <h2 className="pageTitle">Select Projects
+          </h2>
           <Container fluid={true}>
             <Row className='projectsBox'>
               <Col>
@@ -25,11 +26,10 @@ class Projects extends Component {
                   <p className='description'>
                     A <strong>Star Wars Inspired Tic-Tac-Toe</strong> made using <strong>React</strong> May the fun be with you!
                   </p>
-                  {/* <a href="google.com" > </a> */}
-
                 </Square>
-
+                <a className="top" href="http://google.com"> click me</a>
               </Col>
+              <a className="top" href="http://google.com"> click me</a>
               <Col>
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/todolist.jpeg"}
                   linkSrc="https://karensin.github.io/toeWars/" projName="To-Do List">
@@ -46,6 +46,7 @@ class Projects extends Component {
                     and exciting.
                   </p>
                 </Square>
+
               </Col>
 
               <Col>
