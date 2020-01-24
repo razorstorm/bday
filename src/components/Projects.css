@@ -28,7 +28,7 @@
   position: relative;
   margin: 0;
   width: 80;
-  pointer-events: none;
+  /* pointer-events: none; */
   max-width: 1920;
   text-align: center;
 }

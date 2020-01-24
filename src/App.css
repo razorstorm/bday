@@ -372,7 +372,6 @@ img {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, rgba(24, 49, 72, 0.7) 85%, rgba(24, 49, 72, 0.88) 91%, rgba(24, 49, 72, 1) 99%), linear-gradient(0deg, rgba(24, 49, 72, 1) 5%, rgba(0, 0, 0, 0) 20%);
   display: block;
   height: 100%;
-  pointer-events: none;
   z-index: 1;
 }
 
@@ -417,8 +416,8 @@ img {
   position: relative;
 }
 
-.top{
+/* .top{
   z-index: 10;
   position: relative;
- 
 }
+ */
