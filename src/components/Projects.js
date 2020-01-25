@@ -42,7 +42,6 @@ class Projects extends Component {
                   linkSrc="https://www.facebook.com/meeseeksBox2019" projName="Meeseeks Bot" gitLink="https://github.com/karensin/MeeseeksBox" >
                   <p className="description">
                     A <strong>facebook messenger bot</strong> that is automatically responds with text and voice lines from Rick and Morty. This project utilized <strong>webhooks</strong> for token authentication and the <strong>facebook messenger api</strong> to read and send messages.
-
                   </p>
                 </Square>
 
@@ -73,7 +72,6 @@ class Projects extends Component {
                   <p className='description'>
                     A <strong>HTML5 music player</strong> made using <strong>React</strong> and <strong>React Router</strong> to create a Single-Page Application to handle client-side page transitions.
                   </p>
-
                 </Square>
               </Col>
 
