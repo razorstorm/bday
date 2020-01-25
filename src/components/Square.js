@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Dimensions from 'react-dimensions';
-import Button from 'react-bootstrap/Button'
 import './Projects.css';
 
 

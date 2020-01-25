@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Projects.css';
 import Square from './Square.js';
-import Button from 'react-bootstrap/Button'
 
 class Projects extends Component {
   constructor(props) {
@@ -22,7 +21,6 @@ class Projects extends Component {
               <Col>
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/toeWars.png"}
                   linkSrc="https://karensin.github.io/toeWars/" projName="Tic-Tac-Toe Wars" gitLink="https://github.com/karensin/toeWars">
-
                   <p className='description'>
                     A <strong>Star Wars Inspired Tic-Tac-Toe</strong> made using <strong>React</strong>.
                     <p>    May the fun be with you! </p>
@@ -44,7 +42,6 @@ class Projects extends Component {
                     A <strong>facebook messenger bot</strong> that is automatically responds with text and voice lines from Rick and Morty. This project utilized <strong>webhooks</strong> for token authentication and the <strong>facebook messenger api</strong> to read and send messages.
                   </p>
                 </Square>
-
               </Col>
 
               <Col>
@@ -74,8 +71,6 @@ class Projects extends Component {
                   </p>
                 </Square>
               </Col>
-
-
             </Row>
           </Container>
         </section>
