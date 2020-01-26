@@ -43,13 +43,12 @@ class Projects extends Component {
                   </p>
                 </Square>
               </Col>
-
               <Col>
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/bloccit.png"}
                   linkSrc="https://karensin-bloccit.herokuapp.com/" projName="Bloccit" gitLink="https://github.com/karensin/bloccit" >
                   <p className='description'>
-                    An <strong>online content aggregator</strong> and discussion community with <strong>ExpressJS</strong> and utilizes the <strong>Model-View-Controller (MVC)</strong> Pattern. The application uses <strong>ExpressJS Middleware</strong> to perform authentication and validation which allows users to sign up,
-                    sign in and create topics, posts, comments and votes amongst others.
+                    An <strong>online content aggregator</strong> and discussion community built with <strong>ExpressJS</strong> and <strong>Model-View-Controller (MVC)</strong>. Bloccit uses <strong>ExpressJS Middleware</strong> to perform authentication and validation which allows users to sign up,
+                    sign in and create topics, posts, comments, votes and more.
                   </p>
                 </Square>
               </Col>
@@ -62,7 +61,6 @@ class Projects extends Component {
                   </p>
                 </Square>
               </Col>
-
               <Col>
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/musicPlayer.jpg"}
                   linkSrc="https://jams-ksin.herokuapp.com/" projName="MusicPlayer" gitLink="https://github.com/karensin/bloc-jams-react" >
