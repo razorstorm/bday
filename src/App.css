@@ -194,7 +194,7 @@ nav ul, .contact ul {
 nav.nav {
   text-align: center;
   right: 0;
-  padding-right: 50px;
+  padding-right: 30px;
   height: 70px;
   color: white;
   flex-direction: row-reverse;
