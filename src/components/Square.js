@@ -33,10 +33,8 @@ class Square extends Component {
         </div>
         <div className="projectName">
           {this.props.projName}
-
-          <a href={this.props.gitLink}>  <i className="fab fa-github githubIcon"></i>  </a>
-
         </div>
+        <a href={this.props.gitLink}>  <i className="fab fa-2x fa-github githubIcon"></i>  </a>
       </div >
     );
   }

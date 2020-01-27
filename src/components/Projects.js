@@ -76,8 +76,6 @@ class Projects extends Component {
 
                 </Square>
               </Col>
-
-
             </Row>
           </Container>
         </section>
