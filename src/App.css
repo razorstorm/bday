@@ -94,6 +94,10 @@ h2, h3, h4, h5, h6, h7 {
   background-color: rgb(24, 49, 72);
 }
 
+.pageFooter {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
 /* .headerBG:before, .headerBG:after {
   background: url("/images/header.jpeg") no-repeat fixed center / cover;
   content: "";
@@ -243,7 +247,7 @@ a:hover {
 }
 
 footer {
-  margin-top: 50px;
+  margin-top: 30px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -270,7 +274,7 @@ footer {
 
 .contacts {
   text-align: center;
-  padding: 100px 100px 0 100px;
+  padding: 50px 100px 0 100px;
 }
 
 .contacts a {
@@ -303,6 +307,7 @@ h3 {
 
 .aboutmeWrapper {
   text-align: center;
+  padding-bottom: 50px;
   /* background: linear-gradient(0deg, rgb(24, 49, 72) 50%, rgba(24, 49, 72, 0.88) 80%, rgba(24, 49, 72, 0.7) 85%, rgba(0, 0, 0, 0) 100%); */
 }
 

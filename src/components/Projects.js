@@ -31,6 +31,7 @@ class Projects extends Component {
                   linkSrc="https://karensin.github.io/toeWars/" projName="Tic-Tac-Toe Wars" gitLink="https://github.com/karensin/toeWars">
                   <p className='description'>
                     A <strong>Star Wars Inspired Tic-Tac-Toe</strong> made using <strong>React</strong>. Used <strong>bootstrap</strong> and pure <strong>CSS animations</strong> to create scrolling Star Wars intro text.
+
                     <p>May the fun be with you!</p>
                   </p>
                 </Square>
