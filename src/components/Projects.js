@@ -3,7 +3,6 @@ import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Projects.css';
 import Square from './Square.js';
-import Button from 'react-bootstrap/Button'
 
 class Projects extends Component {
   constructor(props) {
@@ -22,7 +21,6 @@ class Projects extends Component {
               <Col>
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/toeWars.png"}
                   linkSrc="https://karensin.github.io/toeWars/" projName="Tic-Tac-Toe Wars" gitLink="https://github.com/karensin/toeWars">
-
                   <p className='description'>
                     A <strong>Star Wars Inspired Tic-Tac-Toe</strong> made using <strong>React</strong>.
                     <p>    May the fun be with you! </p>
@@ -42,18 +40,15 @@ class Projects extends Component {
                   linkSrc="https://www.facebook.com/meeseeksBox2019" projName="Meeseeks Bot" gitLink="https://github.com/karensin/MeeseeksBox" >
                   <p className="description">
                     A <strong>facebook messenger bot</strong> that is automatically responds with text and voice lines from Rick and Morty. This project utilized <strong>webhooks</strong> for token authentication and the <strong>facebook messenger api</strong> to read and send messages.
-
                   </p>
                 </Square>
-
               </Col>
-
               <Col>
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/bloccit.png"}
                   linkSrc="https://karensin-bloccit.herokuapp.com/" projName="Bloccit" gitLink="https://github.com/karensin/bloccit" >
                   <p className='description'>
-                    An <strong>online content aggregator</strong> and discussion community with <strong>ExpressJS</strong> and utilizes the <strong>Model-View-Controller (MVC)</strong> Pattern. The application uses <strong>ExpressJS Middleware</strong> to perform authentication and validation which allows users to sign up,
-                    sign in and create topics, posts, comments and votes amongst others.
+                    An <strong>online content aggregator</strong> and discussion community built with <strong>ExpressJS</strong> and <strong>Model-View-Controller (MVC)</strong>. Bloccit uses <strong>ExpressJS Middleware</strong> to perform authentication and validation which allows users to sign up,
+                    sign in and create topics, posts, comments, votes and more.
                   </p>
                 </Square>
               </Col>
@@ -66,14 +61,12 @@ class Projects extends Component {
                   </p>
                 </Square>
               </Col>
-
               <Col>
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/musicPlayer.jpg"}
                   linkSrc="https://jams-ksin.herokuapp.com/" projName="MusicPlayer" gitLink="https://github.com/karensin/bloc-jams-react" >
                   <p className='description'>
                     A <strong>HTML5 music player</strong> made using <strong>React</strong> and <strong>React Router</strong> to create a Single-Page Application to handle client-side page transitions.
                   </p>
-
                 </Square>
               </Col>
             </Row>

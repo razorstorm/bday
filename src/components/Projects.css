@@ -5,12 +5,8 @@
   margin: 0;
   position: relative;
   display: inline-block;
-  /* overflow: hidden; */
   transition: ease-in-out 0.3s;
   background-size: cover;
-  /* background-color: rgba(255, 255, 255, 0.3); */
-  /* background-color: rgba(0, 0, 0, 0); */
-  /* box-shadow: 0px 0px 200px 0px rgba(255, 255, 255, 0.5); */
 }
 
 .projectName {
@@ -28,8 +24,6 @@
   position: relative;
   margin: 0;
   width: 80;
-  /* pointer-events: none; */
-  max-width: 1920;
   text-align: center;
 }
 
@@ -45,7 +39,7 @@
 
 .description {
   margin: 0;
-  font-size: 11pt;
+  font-size: 12pt;
 }
 
 .white-bg {
@@ -87,7 +81,6 @@
   text-align: left;
   background-color: dodgerblue;
   background-color: rgb(24, 49, 72);
-  /* background-color: #224054; */
   color: white;
   transform: rotateY(180deg);
   padding: 30px;
@@ -97,4 +90,8 @@
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 0px 200px 0px rgba(255, 255, 255, 0.5);
+}
+
+.squareContainer {
+  margin-bottom: 20px;
 }

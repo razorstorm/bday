@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Dimensions from 'react-dimensions';
-import Button from 'react-bootstrap/Button'
 import './Projects.css';
 
 
@@ -32,7 +31,10 @@ class Square extends Component {
           </a>
         </div>
         <div className="projectName">
-          {this.props.projName}
+          <a className="pre" href={this.props.gitLink}>
+            {this.props.projName}
+            &nbsp;<i className="fab fa-github githubIcon"></i>
+          </a>
         </div>
         <a href={this.props.gitLink}>  <i className="fab fa-2x fa-github githubIcon"></i>  </a>
       </div >
