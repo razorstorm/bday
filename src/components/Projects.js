@@ -22,8 +22,8 @@ class Projects extends Component {
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/toeWars.png"}
                   linkSrc="https://karensin.github.io/toeWars/" projName="Tic-Tac-Toe Wars" gitLink="https://github.com/karensin/toeWars">
                   <p className='description'>
-                    A <strong>Star Wars Inspired Tic-Tac-Toe</strong> made using <strong>React</strong>.
-                    <p>    May the fun be with you! </p>
+                    A <strong>Star Wars Inspired Tic-Tac-Toe</strong> made using <strong>React</strong>. Used <strong>bootstrap</strong> and pure <strong>CSS animations</strong> to create scrolling Star Wars intro text.
+                    <p>May the fun be with you!</p>
                   </p>
                 </Square>
               </Col>
@@ -31,7 +31,7 @@ class Projects extends Component {
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/todolist.jpeg"}
                   linkSrc="https://karensin.github.io/todoList/" projName="To-Do List" gitLink="https://github.com/karensin/todoList" >
                   <p className='description'>
-                    A <strong>To-Do List </strong> made using <strong>React</strong>. Keep track of your tasks, manage them online and stay organized!
+                    A <strong>To-Do List </strong> made using <strong>React</strong>. Keep track of your tasks, manage them online, and stay organized!
                   </p>
                 </Square>
               </Col>
