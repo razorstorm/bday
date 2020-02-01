@@ -22,7 +22,7 @@ class Projects extends Component {
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/potat.png"}
                   linkSrc="https://superpotato-webapp.herokuapp.com/" projName="Superpotato" gitLink="https://github.com/karensin/AntisocialNetworkFrontend">
                   <p className='description'>
-                    A <strong>responsive SPA </strong> made using <strong>React</strong> that allows potential participants to sign up for early access of Superpotato - your <strong>personal AI assistant</strong> that keeps track of all your relationships and notifies you when it seems like you’re about to lose touch with family, friends, or business associates.
+                    A <strong>responsive single page app</strong> made using <strong>React</strong> that allows potential participants to sign up for early access of Superpotato - your <strong>personal AI assistant</strong> that keeps track of all your relationships and notifies you when it seems like you’re about to lose touch with family, friends, or business associates.
                   </p>
                 </Square>
               </Col>
