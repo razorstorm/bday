@@ -19,6 +19,14 @@ class Projects extends Component {
           <Container fluid={true}>
             <Row className='projectsBox'>
               <Col>
+                <Square imgSrc={process.env.PUBLIC_URL + "/images/WeatherApp.png"}
+                  linkSrc="https://karensin.github.io/WeatherForecast/" projName="Weather Forecast" gitLink="https://github.com/karensin/WeatherForecast">
+                  <p className='description'>
+                    A <strong> Weather Forecast app </strong> built with React that displays the current weather and 5 day forecast of any city you search for. Data is collected from <strong> OpenWeather  API </strong> and presented in minimalistic design using  <strong>Bootstrap/Flexbox </strong>,  and <strong>interchangeable</strong> backgrounds and icons based on the weather of selected cities.
+                  </p>
+                </Square>
+              </Col>
+              <Col>
                 <Square imgSrc={process.env.PUBLIC_URL + "/images/potat.png"}
                   linkSrc="https://superpotato-webapp.herokuapp.com/" projName="Superpotato" gitLink="https://github.com/karensin/AntisocialNetworkFrontend">
                   <p className='description'>
