@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Contacts from './components/Contacts.js';
 import Home from './components/Home.js';
 import Bubbles from './components/Bubbles.js';
-import Nav from './components/Nav.js';
 
 
 const bubbleMoveSpeed = 2.5;
@@ -20,86 +18,86 @@ const maxGrowthTime = 200;
 const minGrowthRate = 0.001;
 const maxGrowthRate = 0.003;
 function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
+    return Math.random() * (max - min) + min;
 }
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      x: 0,
-      y: 0,
-      bubbles: []
-    };
-  }
-
-  _onMouseMove(e) {
-    const currTime = + new Date();
-    if (currTime > this.state.lastBubbleStamp + getRandomArbitrary(minBubbleTime, maxBubbleTime)) {
-      const direction = Math.random() > 0.5 ? -1 : 1;
-      this.state.bubbles.push({ x: e.clientX, y: e.clientY, size: getRandomArbitrary(minBubbleSize, maxBubbleSize), direction: direction, lastTurnTime: currTime, lastGrowTime: currTime });
-      this.setState({ lastBubbleStamp: currTime });
+    constructor(props) {
+        super(props);
+        this.state = {
+            x: 0,
+            y: 0,
+            bubbles: []
+        };
     }
-  }
 
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
-
-  updateBubbles() {
-    if (this.state) {
-      const currTime = + new Date();
-      const newBubbles = this.state.bubbles.map(bubble => {
-        let direction = bubble.direction;
-        let lastTurnTime = bubble.lastTurnTime;
-        let lastGrowTime = bubble.lastGrowTime;
-        let size = bubble.size;
-        if (currTime > lastTurnTime + getRandomArbitrary(minJitterUTurn, maxJitterUTurn)) {
-          direction = -direction;
-          lastTurnTime = currTime;
+    _onMouseMove(e) {
+        const currTime = + new Date();
+        if (currTime > this.state.lastBubbleStamp + getRandomArbitrary(minBubbleTime, maxBubbleTime)) {
+            const direction = Math.random() > 0.5 ? -1 : 1;
+            this.state.bubbles.push({ x: e.clientX, y: e.clientY, size: getRandomArbitrary(minBubbleSize, maxBubbleSize), direction: direction, lastTurnTime: currTime, lastGrowTime: currTime });
+            this.setState({ lastBubbleStamp: currTime });
         }
-        if (currTime > lastGrowTime + getRandomArbitrary(minGrowthTime, maxGrowthTime)) {
-          lastGrowTime = currTime;
-          size += getRandomArbitrary(minGrowthRate, maxGrowthRate);
-        }
-        if (bubble.y < 0) {
-          return null;
-        }
-        return {
-          x: bubble.x + direction * jitterSpeed,
-          y: bubble.y - bubbleMoveSpeed,
-          size: size,
-          direction: direction,
-          lastTurnTime: lastTurnTime,
-          lastGrowTime: lastGrowTime
-        }
-      }).filter(bubble => {
-        return bubble !== null
-      });
-      this.setState({ bubbles: newBubbles });
     }
-  }
 
-  componentDidMount() {
-    this.setState({ lastBubbleStamp: + new Date() });
-    this.interval = setInterval(this.updateBubbles.bind(this), 20);
-  }
+    componentWillUnmount() {
+        clearInterval(this.interval);
+    }
 
-  render() {
-    const bubbles = this.state.bubbles.map((bubble, i) => {
-      return <Bubbles x={bubble.x} y={bubble.y} size={bubble.size} key={i} />
-    });
-    return (
-      <div className="App" onMouseMove={this._onMouseMove.bind(this)}>
-        <div className="bob">
-          {bubbles}
-        </div>
-        <Nav />
-        <Home />
-        <Contacts />
-      </div>
-    );
-  }
+    updateBubbles() {
+        if (this.state) {
+            const currTime = + new Date();
+            const newBubbles = this.state.bubbles.map(bubble => {
+                let direction = bubble.direction;
+                let lastTurnTime = bubble.lastTurnTime;
+                let lastGrowTime = bubble.lastGrowTime;
+                let size = bubble.size;
+                if (currTime > lastTurnTime + getRandomArbitrary(minJitterUTurn, maxJitterUTurn)) {
+                    direction = -direction;
+                    lastTurnTime = currTime;
+                }
+                if (currTime > lastGrowTime + getRandomArbitrary(minGrowthTime, maxGrowthTime)) {
+                    lastGrowTime = currTime;
+                    size += getRandomArbitrary(minGrowthRate, maxGrowthRate);
+                }
+                if (bubble.y < 0) {
+                    return null;
+                }
+                return {
+                    x: bubble.x + direction * jitterSpeed,
+                    y: bubble.y - bubbleMoveSpeed,
+                    size: size,
+                    direction: direction,
+                    lastTurnTime: lastTurnTime,
+                    lastGrowTime: lastGrowTime
+                }
+            }).filter(bubble => {
+                return bubble !== null
+            });
+            this.setState({ bubbles: newBubbles });
+        }
+    }
+
+    componentDidMount() {
+        this.setState({ lastBubbleStamp: + new Date() });
+        this.interval = setInterval(this.updateBubbles.bind(this), 20);
+    }
+
+    render() {
+        const bubbles = this.state.bubbles.map((bubble, i) => {
+            return <Bubbles x={bubble.x} y={bubble.y} size={bubble.size} key={i} />
+        });
+        return (
+            <div className="App" onMouseMove={this._onMouseMove.bind(this)}>
+                <div className="bob">
+                    {bubbles}
+                </div>
+                {/* <Nav /> */}
+                <Home />
+                {/* <Contacts /> */}
+            </div>
+        );
+    }
 }
 
 export default App;
